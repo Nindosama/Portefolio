@@ -1,0 +1,468 @@
+/*Global styling*/
+body {
+  background-attachment: fixed;
+  font-size: 16px;
+  background-image: url(back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+h2 {
+  padding-bottom: 20px;
+}
+
+h3 {
+  padding-bottom: 15px;
+}
+
+.section-title {
+  border-bottom: 2px solid gray;
+}
+
+/*Navigator*/
+
+.navbar-inverse .navbar-nav>li>a {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar-inverse .navbar-nav>li>a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover:after {
+  width: 100%;
+  background: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:active {
+  background: #000;
+}
+
+/*Home*/
+
+
+.home {
+  height: 100vh;
+}
+
+.welcome-text {
+  position: relative;
+  margin: 50vh auto;
+  font-family: courier;
+  color: white;
+  font-size: 1.25em;
+  text-align: center;
+  white-space: nowrap;
+  width: 46em;
+}
+
+
+.phone-welcome-text {
+  position: relative;
+  margin: 50vh auto;
+  font-family: courier;
+  color: white;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.cursor {
+  font-size: 1em;
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+    opacity: .0;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+    opacity: .0;
+  }
+}
+
+.greeting {
+  width: 46em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: uppercase;
+  -webkit-animation: type 5s steps(50, end);
+  animation: type 5s steps(50, end);
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+.object {
+  color: #ddca7e;
+  text-transform: lowercase;
+
+}
+
+.function {
+  color: #d7d4f0;
+  text-transform: lowercase;
+
+}
+
+/*About me*/
+.profile-container {
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+}
+
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: top;
+  height: 180px;
+  width: 180px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/*Skills*/
+
+.measure {
+  width: 350px;
+  height: 50px;
+  border: 2px solid white;
+  padding: 3px;
+  display: inline;
+  float: left;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.right {
+  position: relative;
+  text-align: right;
+}
+
+.skills {
+  display: block;
+  list-style: none;
+  float: right;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.skills li {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+#html-logo {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png);
+  width: 50px;
+  height: 50px;
+
+}
+
+#html div {
+  width: 0px;
+  height: 40px;
+  background-color: #ef6228;
+}
+
+#html:hover .loadingSkills {
+  width: 80%;
+}
+
+#css-logo {
+  background-image: url(http://masayoshi.official.jp/img/logo-css3-vector.png);
+  width: 50px;
+  height: 50px;
+}
+
+#css div {
+  width: 0px;
+  height: 40px;
+  background-color: #1057a7;
+}
+
+#js-logo {
+  background-image: url(logo_js.png);
+  width: 50px;
+  height: 50px;
+}
+
+#js div {
+  width: 0px;
+  height: 40px;
+  background-color: #e5eb2b;
+}
+
+#java-logo {
+  background-image: url(logo_java.png);
+  width: 50px;
+  height: 50px;
+
+}
+
+#java div {
+  width: 0px;
+  height: 40px;
+  background-color: #bf0000;
+}
+
+#CS-logo {
+  background-image: url(logo_CS.png);
+  width: 50px;
+  height: 50px;
+}
+
+#CS div {
+  width: 0px;
+  height: 40px;
+  background-color: #008dcb;
+
+}
+
+.skill-logo {
+  float: right;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#about {
+  padding: 10px 20px 20px 20px;
+}
+
+#js-loadingSkills,
+#css-loadingSkills,
+#html-loadingSkills,
+#java-loadingSkills,
+#CS-loadingSkills {
+  -webkit-transition: width 1s linear;
+  -moz-transition: width 1s linear;
+  -o-transition: width 1s linear;
+  transition: width 1s linear;
+  float: right;
+}
+
+/*Portfolio*/
+
+
+.white-text {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+#portfolio.well {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 0px;
+
+}
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+}
+
+.caption {
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  background: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  text-align: center;
+  color: #fff !important;
+  z-index: 3;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.caption h4 {
+  border-bottom: 2px solid white;
+}
+
+.projects {
+  padding-top: 20px;
+}
+
+.caption p {
+  padding-top: 5px;
+}
+
+.thumbnail:hover .caption {
+  bottom: 0%;
+  cursor: pointer;
+}
+
+.well {
+  margin-bottom: 0;
+}
+
+
+/*Contact*/
+
+.form-horizontal .control-label {
+
+  text-align: left;
+}
+
+
+.ul-style {
+  list-style: none;
+}
+
+.ul-style li {
+  margin-bottom: 15px;
+  margin-right: 30px;
+  display: inline;
+}
+
+.contact-form {
+  margin-top: 45px;
+}
+
+.form-horizontal {
+
+  padding-top: 20px;
+}
+
+
+.contact-form:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid #f0f0f0;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -25px;
+}
+
+.fa {
+  color: gray;
+}
+
+
+.icon {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: inline;
+}
+
+.white-div {
+  background-color: white;
+}
+
+.fa.fa-facebook:hover {
+  color: #3b5998;
+  cursor: pointer;
+}
+
+.fa.fa-linkedin-square:hover {
+  color: #1c87bd;
+  cursor: pointer;
+}
+
+.fa.fa-github-alt:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.fa.fa-google-plus:hover {
+  color: #d73d32;
+  cursor: pointer;
+}
+
+#contact.well {
+  background-color: transparent;
+  border: 0px;
+  padding-bottom: 0px;
+}
+
+/*Media query*/
+
+@media screen and (min-width: 1024px) {
+  .home {
+    background-color: #000;
+  }
+
+  .welcome-text {
+    display: block;
+  }
+
+  .phone-welcome-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .measure {
+    width: 220px;
+  }
+
+  .welcome-text {
+    display: none;
+  }
+
+  .phone-welcome-text {
+    display: block;
+  }
+
+}
+
+.black-div {
+  background-color: black;
+  color: white;
+}
+
+.col-sm-82 {
+  color: white
+}
+
+.col-sm-62 {
+  color: white
+}

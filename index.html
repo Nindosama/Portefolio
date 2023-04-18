@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Portefolio</title>
+  <meta charset="utf-8">
+  <meta lang="fr">
+  <meta name="author" content="Mathéo Boileau">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+
+  <body data-spy="scroll" data-target="#navigator">
+
+    <!--Navigation bar-->
+    <div id="navigator">
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-collapse-main">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a cla href="#home">Home</a></li>
+              <li id="skill-anim"><a href="#about">A propos</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--home-->
+    <div id="home" class="row home">
+      <div class="welcome-text">
+        <p class="greeting"><span class="object">document</span>.<span class="function">write</span>("Bonjour, mon nom
+          est BOILEAU MATHEO. Bienvenue!");<span class="cursor">|</span></p>
+      </div>
+
+      <div class="phone-welcome-text text-center">
+        <p class="phone-home">Bonjour, mon nom est BOILEAU MATHEO. Bienvenue!</p>
+      </div>
+    </div>
+
+    <div id="about" class="row white-div">
+      <h2 class="section-title">A propos</h2>
+      <div class="col-md-6">
+        <h3>Qui suis-je?</h3>
+        <div class="row">
+          <div class="col-sm-4 profile-container">
+            <img class="profile-pic" src="Profil.png" alt="profile picture">
+          </div>
+          <div class="col-sm-8">
+            <p>Bonjour je me presente Boileau Mathéo, actuellement en deuxiememe années de BTS SIO (Service Informatique
+              au Organisation). J'ai suivi un parcours plutot simple, Après avoir fait une seconde genrale et
+              technologique, je me suis dirigée vers une premiere et une terminale STI2D option SIN. Cette oriantation
+              au lycee je souhaitais continuer dans le domaine informatique et me spécialisé. La formation BTS SIO me
+              semblait donc la plus adapté. Lors de cette formation j'ai pu devellopé des compétances en devellopement
+              web ainsi que en devellopement applicatif, j'ai ensuite pu me develloper en reseaux en genstion de parc
+              informatique ainsi que quelque notion en droits en economie et en management.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3 class="right">Mes competences</h3>
+        <div class="skills">
+          <ul>
+            <li>
+              <div id="html" class="measure">
+                <div id="html-loadingSkills">80%</div>
+              </div>
+              <div id="html-logo" class="skill-logo"></div>
+            </li>
+            <li>
+              <div id="css" class="measure">
+                <div id="css-loadingSkills">70%</div>
+              </div>
+              <div id="css-logo" class="skill-logo"></div>
+            </li>
+            <li>
+              <div id="js" class="measure">
+                <div id="js-loadingSkills">70%</div>
+              </div>
+              <div id="js-logo" class="skill-logo"></div>
+            </li>
+            <li>
+              <div id="java" class="measure">
+                <div id="java-loadingSkills">60%</div>
+              </div>
+              <div id="java-logo" class="skill-logo"></div>
+            </li>
+            <li>
+              <div id="CS" class="measure">
+                <div id="CS-loadingSkills">50%</div>
+              </div>
+              <div id="CS-logo" class="skill-logo"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Portefolio-->
+    <div id="portfolio" class="row well">
+      <h2 class="section-title white-text">Portfolio</h2>
+      <div class="row projects">
+        <div class="col-sm-4 col-md-3 ">
+          <div class="thumbnail">
+            <div class="caption">
+              <h4>PPE 1</h4>
+              <p>La société souhaite permettre à ses agents commerciaux la modification et le paramétrage de certaines
+                parties de leur site internet, pour cela il demande à son équipe de développeurs de proposer une
+                solution.
+              </p>
+            </div>
+            <a href="https://docs.google.com/document/d/1XFfp93q5x0au7eoK5ixrnOYmMGtNxjYxmfl9fY2Pkhs/view?usp=sharing"
+              target="_blank">
+              <img src="Image_PPE1.png" alt="project-1"></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3 ">
+          <div class="thumbnail">
+            <div class="caption">
+              <h4>PPE 2</h4>
+              <p>Nous avons besoin de réaliser un site web pour notre projet Amicale laïque des écoles
+                Publiques de Lectour.
+                Description de notre projet : Le projet a pour but de constituer un site web à l'association qui puisse
+                être modifié et qui montre les évènements passés et futurs avec un calendrier et qui contient un système
+                d'adhésion.
+              </p>
+            </div>
+            <a href="https://docs.google.com/document/d/1xRd8Hc13Sv_-yc8MUQ4X9TUP99mu5P6355w8wxiJ_O8/edit?usp=sharing"
+              target="_blank">
+              <img src="Image_PPE2.png" alt="project-2"></a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 ">
+          <div class="thumbnail">
+            <div class="caption">
+              <h4>PPE 3</h4>
+              <p>L’application va permettre d’établir une gestion plus précise et uniforme entre les entités du groupe.
+                Elle devra permettre aux agents de voyages de saisir les retours de leurs clients sur les voyages des T
+                .O du groupe et hors Groupe . L’analyse de ces données alimente une base de données qui permettra de
+                comparer, analyser et déterminer des axes d’améliorations.
+              </p>
+            </div>
+            <a href="https://docs.google.com/document/d/18R7X2eqvpJ1gauSmKP65KJyZjnEQ_XmZ5JqJ3jBPrQo/edit?usp=sharing"
+              target="_blank">
+              <img src="Image_PPE3.png" alt="project-3"></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3 ">
+          <div class="thumbnail">
+            <div class="caption">
+              <h4>Suite de commande SQL</h4>
+              <p>Le TP avait pour but de nous faire revoir les commandes sql afin d'aller chercher des informations dans
+                une base de données. Dans ce cas precis la base de données etait basé sur une application de gestion
+                d'un établissement scolaire.</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1B_4JgApgL2ASzCkFATQ4ngbhn8R2vyZKIlQOKjqoLfI/edit?usp=sharing"
+              target="_blank">
+              <img src="image_sql.png" alt="project-4"></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 col-md-3 ">
+          <div class="thumbnail">
+            <div class="caption">
+              <h4>C# création d'un systeme de banques</h4>
+              <p>Le projet avait pour but de créer un systeme de banque contenant un blocage si trop de mot de passe
+                incorect ou encore le fait de pouvoit consulté son solde ainsi que de pouvoir retirer.</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1u22L7vmYB9kB-9doiEsxsuVTeElrFWZdOVLAOms9JAk/edit?usp=sharing"
+              target="_blank">
+              <img src="Image_C.png" alt="project-5"></a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 ">
+          <div class="thumbnail">
+            <div class="caption">
+              <h4>Application Java</h4>
+              <p>Création d'une application de calcul d'imc et de generation de numero de sécurité social.</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1S3Tcm4EIK_lJ-VK3De3sGO8Z86KI46jTNJKHhhQXqX0/edit?usp=sharing"
+              target="_blank">
+              <img src="Image_java.png" alt="project-1"></a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 ">
+          <div class="thumbnail">
+            <div class="caption">
+              <h4>Serveur LAMP</h4>
+              <p>Mise en place d'un serveur LAMP sur une machine LINUX</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1j1b4hNuyK8iyV6yyMSenNZK6pSmbhDBz/edit?usp=sharing&ouid=106607737723574721806&rtpof=true&sd=true"
+              target="_blank">
+              <img src="Image_glpi.png" alt="project-1"></a>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 ">
+          <div class="thumbnail">
+            <div class="caption">
+              <h4>GESPLANNING</h4>
+              <p>Apprentissage des bases de données en php.</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1w3HGl7UT-yznbSNMYr4uyIZrg4tQgsjmuHsyGZsI4Yk/edit?usp=sharing"
+              target="_blank">
+              <img src="Image_php.png" alt="project-1"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact-->
+    <div id="portfolio" class="row well">
+      <h2 class="section-title white-text">Veille techno</h2>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-sm-82">
+            <p>Voici une partie de ma veille technologique qui me permet de rester "A jour" dans les sujets que je peux
+              etre ammener a traité lors de differents projets ou encore differents travail. <br>
+              Ce "PearlTree" est un regroupement de tout mes autres reseaux qui me permmettent de faire de la veille
+              technologique comme twitter ou encore reddit.<br>
+              J'approvisionne regulierement celui-ci afin que il soit en permanence le plus complet possible.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <iframe src="https://www.pearltrees.com/nindosama/veille-techno/id50467332?embed=2&d=20230409026" width="400"
+          height="310" style="border:0px;" allowtransparency="true"></iframe><span
+          style="display:block; padding-top:2px; color:#818181; font-size:13px;"><a
+            href="https://www.pearltrees.com/nindosama/veille-techno/id50467332" style=" color:#818181; font-size:13px;"
+            target="_blank">Veille techno</a>, par <a href="https://www.pearltrees.com/nindosama"
+            style=" color:#818181; font-size:13px;" target="_blank">Mathéo Boileau</a></span>
+      </div>
+    </div>
+  </body>
+
+    <footer class="row black-div">
+      <div class="text-center">By BOILEAU Mathéo</div>
+    </footer>
+
+
+    <!-- partial -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src="./script.js"></script>
+
+  </body>
+
+</html>
